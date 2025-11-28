@@ -14,7 +14,7 @@ public class TMMEClient implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
 
-        BlockRenderLayerMap.INSTANCE.putBlocks(RenderLayer.getTranslucent(),
+        BlockRenderLayerMap.INSTANCE.putBlocks(RenderLayer.getCutout(),
                 TMMEBlocks.GOLDEN_GLASS_PANEL_LOWER,
                 TMMEBlocks.GOLDEN_GLASS_PANEL_UPPER,
                 TMMEBlocks.GOLDEN_GLASS_PANEL_TOP,
@@ -25,7 +25,8 @@ public class TMMEClient implements ClientModInitializer {
                 TMMEBlocks.GOLDEN_GLASS_PANEL_TOP_LEFT,
                 TMMEBlocks.GOLDEN_GLASS_PANEL_BOTTOM_RIGHT,
                 TMMEBlocks.GOLDEN_GLASS_PANEL_BOTTOM_LEFT,
-                TMMEBlocks.GOLDEN_GLASS_PANEL_BROKEN
+                TMMEBlocks.GOLDEN_GLASS_PANEL_BROKEN,
+                TMMEBlocks.GOLDEN_GLASS_PANEL_EMPTY
         );
 
         TMMClient.CustomModelProvider customModelProvider = new TMMClient.CustomModelProvider();

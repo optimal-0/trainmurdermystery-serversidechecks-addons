@@ -45,6 +45,7 @@ public class TMMEBlockLootTableGen extends FabricBlockLootTableProvider {
         this.addSelfDrop(TMMEBlocks.GOLDEN_GLASS_PANEL_BOTTOM_RIGHT);
         this.addSelfDrop(TMMEBlocks.GOLDEN_GLASS_PANEL_BOTTOM_LEFT);
         this.addSelfDrop(TMMEBlocks.GOLDEN_GLASS_PANEL_BROKEN);
+        this.addSelfDrop(TMMEBlocks.GOLDEN_GLASS_PANEL_EMPTY);
 
 
     }

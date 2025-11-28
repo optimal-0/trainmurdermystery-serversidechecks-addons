@@ -29,6 +29,7 @@ public class TMMEBlockTagGen extends FabricTagProvider.BlockTagProvider {
                 .add(TMMEBlocks.GOLDEN_GLASS_PANEL_TOP_LEFT)
                 .add(TMMEBlocks.GOLDEN_GLASS_PANEL_BOTTOM_RIGHT)
                 .add(TMMEBlocks.GOLDEN_GLASS_PANEL_BOTTOM_LEFT)
-                .add(TMMEBlocks.GOLDEN_GLASS_PANEL_BROKEN);
+                .add(TMMEBlocks.GOLDEN_GLASS_PANEL_BROKEN)
+                .add(TMMEBlocks.GOLDEN_GLASS_PANEL_EMPTY);
     }
 }

@@ -34,6 +34,7 @@ public interface TMMEBlocks {
     Block GOLDEN_GLASS_PANEL_BOTTOM_RIGHT = registrar.createWithItem("golden_glass_panel_bottom_right", new BrokenGlassPanelBlock(AbstractBlock.Settings.create().strength(0.3f).sounds(BlockSoundGroup.GLASS).allowsSpawning(Blocks::never)), TMMEItems.TMME_BLOCK_GROUP);
     Block GOLDEN_GLASS_PANEL_BOTTOM_LEFT = registrar.createWithItem("golden_glass_panel_bottom_left", new BrokenGlassPanelBlock(AbstractBlock.Settings.create().strength(0.3f).sounds(BlockSoundGroup.GLASS).allowsSpawning(Blocks::never)), TMMEItems.TMME_BLOCK_GROUP);
     Block GOLDEN_GLASS_PANEL_BROKEN = registrar.createWithItem("golden_glass_panel_broken", new BrokenGlassPanelBlock(AbstractBlock.Settings.create().strength(0.3f).sounds(BlockSoundGroup.GLASS).allowsSpawning(Blocks::never).nonOpaque()), TMMEItems.TMME_BLOCK_GROUP);
+    Block GOLDEN_GLASS_PANEL_EMPTY = registrar.createWithItem("golden_glass_panel_empty", new BrokenGlassPanelBlock(AbstractBlock.Settings.create().strength(0.3f).sounds(BlockSoundGroup.GLASS).allowsSpawning(Blocks::never).nonOpaque()), TMMEItems.TMME_BLOCK_GROUP);
 
 
     static void initialize() {

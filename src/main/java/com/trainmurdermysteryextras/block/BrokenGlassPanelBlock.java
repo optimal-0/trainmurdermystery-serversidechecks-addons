@@ -100,7 +100,8 @@ public class BrokenGlassPanelBlock extends FacingBlock {
                 || stateFrom.isOf(TMMEBlocks.GOLDEN_GLASS_PANEL_TOP_LEFT)
                 || stateFrom.isOf(TMMEBlocks.GOLDEN_GLASS_PANEL_BOTTOM_RIGHT)
                 || stateFrom.isOf(TMMEBlocks.GOLDEN_GLASS_PANEL_BOTTOM_LEFT)
-                || stateFrom.isOf(TMMEBlocks.GOLDEN_GLASS_PANEL_BROKEN);
+                || stateFrom.isOf(TMMEBlocks.GOLDEN_GLASS_PANEL_BROKEN)
+                || stateFrom.isOf(TMMEBlocks.GOLDEN_GLASS_PANEL_EMPTY);
 
 
         Direction facing = state.get(FACING);

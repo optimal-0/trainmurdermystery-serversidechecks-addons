@@ -67,6 +67,7 @@ public class TMMEModelGen extends FabricModelProvider {
         this.registerGlassPanel(generator, TMMEBlocks.GOLDEN_GLASS_PANEL_BOTTOM_RIGHT);
         this.registerGlassPanel(generator, TMMEBlocks.GOLDEN_GLASS_PANEL_BOTTOM_LEFT);
         this.registerGlassPanel(generator, TMMEBlocks.GOLDEN_GLASS_PANEL_BROKEN);
+        this.registerGlassPanel(generator, TMMEBlocks.GOLDEN_GLASS_PANEL_EMPTY);
     }
 
     @Override
