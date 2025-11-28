@@ -1,6 +1,5 @@
 package com.trainmurdermysteryextras.datagen;
 
-import dev.doctor4t.trainmurdermystery.datagen.TMMBlockLootTableGen;
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 import net.fabricmc.fabric.api.event.registry.DynamicRegistries;

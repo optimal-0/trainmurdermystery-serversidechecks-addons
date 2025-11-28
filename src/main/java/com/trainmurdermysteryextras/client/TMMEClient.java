@@ -1,8 +1,6 @@
 package com.trainmurdermysteryextras.client;
 
-import com.trainmurdermysteryextras.TrainMurderMysteryExtras;
 import com.trainmurdermysteryextras.index.TMMEBlocks;
-import dev.doctor4t.trainmurdermystery.TMMConfig;
 import dev.doctor4t.trainmurdermystery.client.TMMClient;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;

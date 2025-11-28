@@ -4,12 +4,9 @@ import com.trainmurdermysteryextras.index.TMMEBlocks;
 import dev.doctor4t.trainmurdermystery.block.OrnamentBlock;
 import dev.doctor4t.trainmurdermystery.block.PanelBlock;
 import dev.doctor4t.trainmurdermystery.block.property.OrnamentShape;
-import dev.doctor4t.trainmurdermystery.index.TMMBlocks;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
-import net.minecraft.block.BedBlock;
 import net.minecraft.block.Block;
-import net.minecraft.block.enums.BedPart;
 import net.minecraft.data.family.BlockFamily;
 import net.minecraft.loot.LootPool;
 import net.minecraft.loot.LootTable;
@@ -50,14 +47,6 @@ public class TMMEBlockLootTableGen extends FabricBlockLootTableProvider {
 
     }
 
-    private void addFamily(BlockFamily family) {
-        this.addFamily(family, this::addSelfDrop);
-    }
-
-    private void addFamily(BlockFamily family, Consumer<Block> consumer) {
-        family.getVariants().values().forEach(consumer);
-        consumer.accept(family.getBaseBlock());
-    }
 
     private void addSelfDrop(Block block) {
         this.addSelfDrop(block, this::drops);
@@ -72,37 +61,10 @@ public class TMMEBlockLootTableGen extends FabricBlockLootTableProvider {
         }
     }
 
-    private void addNothingDrop(Block block) {
-        this.addDrop(block, dropsNothing());
-    }
 
     private ConstantLootNumberProvider count(float value) {
         return ConstantLootNumberProvider.create(value);
     }
 
-    private LootTable.Builder panelDrops(Block block) {
-        return LootTable.builder().pool(LootPool.builder().with(
-                this.addSurvivesExplosionCondition(block, ItemEntry.builder(block))
-                        .apply(
-                                Direction.values(),
-                                direction -> SetCountLootFunction.builder(this.count(1), true)
-                                        .conditionally(BlockStatePropertyLootCondition.builder(block).properties(
-                                                StatePredicate.Builder.create().exactMatch(PanelBlock.getProperty(direction), true)
-                                        ))
-                        ).apply(SetCountLootFunction.builder(this.count(-1f), true))
-        ));
-    }
 
-    private LootTable.Builder ornamentDrops(Block block) {
-        return LootTable.builder().pool(LootPool.builder().with(
-                this.addSurvivesExplosionCondition(block, ItemEntry.builder(block))
-                        .apply(
-                                OrnamentShape.values(),
-                                shape -> SetCountLootFunction.builder(this.count(shape.getCount()), false)
-                                        .conditionally(BlockStatePropertyLootCondition.builder(block).properties(
-                                                StatePredicate.Builder.create().exactMatch(OrnamentBlock.SHAPE, shape)
-                                        ))
-                        )
-        ));
-    }
 }

@@ -39,10 +39,6 @@ public class TMMEModelGen extends FabricModelProvider {
         return template(parent, null, requiredTextureKeys);
     }
 
-    private static Model template(String parentName, @Nullable String variant, TextureKey... requiredTextureKeys) {
-        return template(TMM.id(parentName), variant, requiredTextureKeys);
-    }
-
     private static Model template(String parentName, TextureKey... requiredTextureKeys) {
         return template(TMM.id(parentName), requiredTextureKeys);
     }
@@ -83,10 +79,6 @@ public class TMMEModelGen extends FabricModelProvider {
     }
     private <T> BlockStateVariant variant(VariantSetting<T> variantSetting, T value) {
         return this.variant().put(variantSetting, value);
-    }
-
-    private <T> BlockStateVariant variant(Identifier model, VariantSetting<T> variantSetting, T value) {
-        return this.model(model).put(variantSetting, value);
     }
 
     // Copy implementations from base mod or provide your own
