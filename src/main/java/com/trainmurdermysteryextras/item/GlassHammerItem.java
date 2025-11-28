@@ -103,7 +103,7 @@ public class GlassHammerItem extends Item  {
             world.setBlockState(currentPos, TMMEBlocks.GOLDEN_GLASS_PANEL_BROKEN.getDefaultState().with(FacingBlock.FACING, currentState.get(FacingBlock.FACING)),  3);
         }
         else if (matchUp && matchDown && matchLeft && matchRight) {
-            world.setBlockState(currentPos, TMMEBlocks.GOLDEN_GLASS_PANEL_BROKEN.getDefaultState().with(FacingBlock.FACING, currentState.get(FacingBlock.FACING)),  3);
+            world.setBlockState(currentPos, TMMEBlocks.GOLDEN_GLASS_PANEL_EMPTY.getDefaultState().with(FacingBlock.FACING, currentState.get(FacingBlock.FACING)),  3);
         }
         else if (matchUp && !matchDown && !matchLeft && !matchRight) {
             world.setBlockState(currentPos, TMMEBlocks.GOLDEN_GLASS_PANEL_LOWER.getDefaultState().with(FacingBlock.FACING, currentState.get(FacingBlock.FACING)),  3);

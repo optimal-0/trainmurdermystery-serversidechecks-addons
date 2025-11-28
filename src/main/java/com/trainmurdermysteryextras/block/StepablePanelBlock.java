@@ -16,8 +16,8 @@ public class StepablePanelBlock extends MultifaceGrowthBlock {
     // Predefined shapes for each face
     private static final VoxelShape UP_SHAPE = createCuboidShape(0.0, 15.9, 0.0, 16.0, 16, 16.0);
     private static final VoxelShape DOWN_SHAPE = createCuboidShape(0.0, 0.0, 0.0, 16.0, 0.1, 16.0);
-    private static final VoxelShape EAST_SHAPE = createCuboidShape(-16.1, 0.0, 0.0, 0.1, 8, 16);
-    private static final VoxelShape WEST_SHAPE = createCuboidShape(15.9, 0.0, 0.0, 32.1, 8, 16.0);
+    private static final VoxelShape WEST_SHAPE = createCuboidShape(-16.1, 0.0, 0.0, 0.1, 8, 16);
+    private static final VoxelShape EAST_SHAPE = createCuboidShape(15.9, 0.0, 0.0, 32.1, 8, 16.0);
     private static final VoxelShape SOUTH_SHAPE = createCuboidShape(0.0, 0.0, 15.9, 16.0, 8, 32.1);
     private static final VoxelShape NORTH_SHAPE = createCuboidShape(0.0, 0.0, -16.1, 16.0, 8, 0.1);
 
