@@ -1,6 +1,6 @@
 {
 	"required": true,
-	"package": "com.trainmurdermysteryextras.mixin",
+	"package": "com.trainmurdermysteryserversidechecks.mixin",
 	"compatibilityLevel": "JAVA_21",
 	"mixins": [
 		"ExampleMixin"

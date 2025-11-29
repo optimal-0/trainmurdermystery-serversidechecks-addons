@@ -1,8 +1,8 @@
 {
 	"schemaVersion": 1,
-	"id": "trainmurdermysteryextras",
+	"id": "trainmurdermysteryserversidechecks",
 	"version": "${version}",
-	"name": "TrainMurderMysteryExtras",
+	"name": "TrainMurderMysteryServerSideChecks",
 	"description": "This is an example description! Tell everyone what your mod is about!",
 	"authors": [
 		"Me!"
@@ -12,22 +12,16 @@
 		"sources": "https://github.com/FabricMC/fabric-example-mod"
 	},
 	"license": "CC0-1.0",
-	"icon": "assets/trainmurdermysteryextras/icon.png",
+	"icon": "assets/trainmurdermysteryserversidechecks/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"com.trainmurdermysteryextras.TrainMurderMysteryExtras"
+          "com.trainmurdermysteryserversidechecks.TrainMurderMysteryServerSideChecks"
 		],
         "client": [
-          "com.trainmurdermysteryextras.client.TMMEClient"
-        ],
-		"fabric-datagen": [
-			"com.trainmurdermysteryextras.datagen.TMMEDatagen"
-		]
+          "com.trainmurdermysteryserversidechecks.client.TMMEClient"
+        ]
 	},
-	"mixins": [
-		"trainmurdermysterextras.mixins.json"
-	],
 	"depends": {
 		"fabricloader": ">=0.17.2",
 		"minecraft": "~1.21.1",
