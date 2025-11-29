@@ -1,5 +1,6 @@
 package com.trainmurdermysteryserversidechecks;
 
+import com.trainmurdermysteryserversidechecks.checks.ServerChecks;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -12,6 +13,9 @@ public class TrainMurderMysteryServerSideChecks implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+
+        //Server Keybind Checks
+        ServerChecks.init();
 
 	}
 }

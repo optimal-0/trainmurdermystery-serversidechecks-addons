@@ -19,7 +19,7 @@
           "com.trainmurdermysteryserversidechecks.TrainMurderMysteryServerSideChecks"
 		],
         "client": [
-          "com.trainmurdermysteryserversidechecks.client.TMMEClient"
+          "com.trainmurdermysteryserversidechecks.client.Client"
         ]
 	},
 	"depends": {
